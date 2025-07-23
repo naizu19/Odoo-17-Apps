@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Main Menu -->
+    <menuitem id="menu_school_management_root"
+              name="School Management"
+              web_icon="school_manegment_system,static/description/icon.png"
+              sequence="10"/>
+
+    <!-- Student Menu -->
+    <menuitem id="menu_student_root"
+              name="Students"
+              parent="menu_school_management_root"
+              sequence="10"/>
+
+    <menuitem id="menu_student"
+              name="Students"
+              parent="menu_student_root"
+              action="action_student"
+              sequence="10"/>
+
+    <!-- Class Menu -->
+    <menuitem id="menu_class_root"
+              name="Classes"
+              parent="menu_school_management_root"
+              sequence="20"/>
+
+    <menuitem id="menu_class"
+              name="Classes"
+              parent="menu_class_root"
+              action="action_class"
+              sequence="10"/>
+
+    <!-- Attendance Menu -->
+    <menuitem id="menu_attendance_root"
+              name="Attendance"
+              parent="menu_school_management_root"
+              sequence="30"/>
+
+    <menuitem id="menu_attendance"
+              name="Attendance"
+              parent="menu_attendance_root"
+              action="action_attendance"
+              sequence="10"/>
+
+    <!-- Fee Menu -->
+    <menuitem id="menu_fee_root"
+              name="Fees"
+              parent="menu_school_management_root"
+              sequence="40"/>
+
+    <menuitem id="menu_fee"
+              name="Fees"
+              parent="menu_fee_root"
+              action="action_fee"
+              sequence="10"/>
+</odoo> 
